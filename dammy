@@ -1,0 +1,20 @@
+pipeline {
+    agent any
+    stages {
+        stage('Getting from SCM') {
+            steps {
+                sh 'mkdir "scm01"'
+            }
+        }
+        stage('testing') {
+            steps {
+                sh 'mkdir "testing01"'
+            }
+        }
+        stage('Security') {
+            steps {
+                sh 'mkdir "Security01"'
+            }
+        }
+    }
+}
